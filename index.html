@@ -83,7 +83,8 @@
     {k:"tip",  name:"Сингл-тип от 1000 токенов",   each:5,  max:50},
     {k:"p30",  name:"Приват от 30 минут",          each:3},
     {k:"p60",  name:"Приват от 1 часа",            each:7},
-    {k:"fan",  name:"Подписчик фанклуба",          each:2,  max:40}
+    {k:"fan",  name:"Подписчик фанклуба",          each:2,  max:40},
+    {k:"hc",   name:"Праздничный контент",         each:5,  max:25}
   ];
 
   function moneyPts(ob){ ob = Math.max(0, ob||0); return Math.min(ob,1000)*0.15 + Math.max(ob-1000,0)*0.07; }
@@ -144,14 +145,14 @@
 
     h += '<div class="grid">';
     // итог
-    h += '<div class="card"><div class="label">Твои баллы за марафон</div>'
+    h += '<div class="card"><div class="label">Твой прогресс</div>'
        + '<div class="big">'+f0(total)+'<span>баллов</span></div>'
        + '<div class="bar"><i style="width:'+pct+'%"></i></div>'
        + '<div class="note">'+ (total>=THRESHOLD
             ? '<b>Порог 700 баллов пройден</b> — если войдёшь в пятёрку, приз полный.'
             : 'До порога полного приза <b>'+f0(THRESHOLD-total)+'</b> баллов из 700.') +'</div>'
        + '<div class="row2"><div><div class="k">часы и деньги</div><div class="x">'+f0(total-ex.total)+'</div></div>'
-       + '<div><div class="k">допбаллы</div><div class="x">'+f0(ex.total)+'</div></div>'
+       + '<div><div class="k">доп.баллы</div><div class="x">'+f0(ex.total)+'</div></div>'
        + '<div><div class="k">часов за марафон</div><div class="x">'+hrs(totalHours)+'</div></div></div>'
        + '</div>';
 
@@ -192,7 +193,7 @@
     h += '</tbody></table></div></div>';
 
     // допбаллы
-    h += '<div class="card" style="margin-top:12px"><div class="label">Допбаллы — '+f0(ex.total)+'</div><div class="extras">';
+    h += '<div class="card" style="margin-top:12px"><div class="label">Дополнительные баллы — '+f0(ex.total)+'</div><div class="extras">';
     ex.list.forEach(function(it){
       var e = it.e, sub;
       if (e.once) sub = it.n>0 ? 'засчитано' : '+'+e.each+' баллов';
