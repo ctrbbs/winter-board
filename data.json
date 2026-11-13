@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13",
+ "updated": null,
  "current": 0,
  "m": {
   "demo": {
@@ -202,19 +202,12 @@
   },
   "5cvermxgjk": {
    "p": [
-    {
-     "cat": "Amateur",
-     "h": 10,
-     "ob": 0,
-     "st": "prelim"
-    },
+    null,
     null,
     null,
     null
    ],
-   "x": {
-    "tip": 1
-   }
+   "x": {}
   },
   "43q8blc3n1": {
    "p": [
