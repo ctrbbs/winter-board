@@ -144,7 +144,7 @@
     h+='</div><div class="tw"><table><thead><tr><th class="l">#</th><th class="l">Ник</th><th class="l">Ступень</th><th class="l">Коуч</th><th>Часы</th><th>Доп.</th><th>Баллы</th><th>До 700</th></tr></thead><tbody>';
     STATE.rows.forEach(function(r){
       if(STATE.coach!=="Все" && r.c!==STATE.coach) return;
-      var zone = r.place && r.place<=5;
+      var zone = r.place && r.place<=5 && r.t>0;
       var left = Math.max(0, THRESHOLD - r.t);
       h+='<tr class="'+(zone?'zone':'')+(r.out?' out':'')+'">'
         +'<td class="l pl">'+(r.place||'—')+'</td>'
