@@ -1,5 +1,5 @@
 {
- "updated": null,
+ "updated": "2026-11-17",
  "current": 0,
  "m": {
   "demo": {
@@ -31,7 +31,11 @@
   },
   "h6zs19moqh": {
    "p": [
-    null,
+    {
+     "cat": "PRO",
+     "ob": 0.4,
+     "st": "prelim"
+    },
     null,
     null,
     null
@@ -85,7 +89,11 @@
   },
   "ttl3xxqtiy": {
    "p": [
-    null,
+    {
+     "cat": "PRO",
+     "ob": 738.4,
+     "st": "prelim"
+    },
     null,
     null,
     null
@@ -94,7 +102,11 @@
   },
   "sjvlnti4v8": {
    "p": [
-    null,
+    {
+     "cat": "PRO",
+     "ob": 12.6,
+     "st": "prelim"
+    },
     null,
     null,
     null
@@ -103,7 +115,11 @@
   },
   "cai7z1ed06": {
    "p": [
-    null,
+    {
+     "cat": "PRO",
+     "ob": 0.5,
+     "st": "prelim"
+    },
     null,
     null,
     null
@@ -130,7 +146,11 @@
   },
   "9axw6qdpjo": {
    "p": [
-    null,
+    {
+     "cat": "PRO",
+     "ob": 107.5,
+     "st": "prelim"
+    },
     null,
     null,
     null
@@ -166,7 +186,11 @@
   },
   "y6rnv8dgac": {
    "p": [
-    null,
+    {
+     "cat": "PRO",
+     "ob": 21.6,
+     "st": "prelim"
+    },
     null,
     null,
     null
@@ -184,7 +208,11 @@
   },
   "5cvermxgjk": {
    "p": [
-    null,
+    {
+     "cat": "Amateur",
+     "ob": 20.35,
+     "st": "prelim"
+    },
     null,
     null,
     null
@@ -202,7 +230,11 @@
   },
   "2kn9yzayot": {
    "p": [
-    null,
+    {
+     "cat": "Amateur",
+     "ob": 12.35,
+     "st": "prelim"
+    },
     null,
     null,
     null
@@ -211,7 +243,11 @@
   },
   "agz30bzbwa": {
    "p": [
-    null,
+    {
+     "cat": "Amateur",
+     "ob": 2.5,
+     "st": "prelim"
+    },
     null,
     null,
     null
@@ -274,7 +310,11 @@
   },
   "qrcsgvil96": {
    "p": [
-    null,
+    {
+     "cat": "Amateur",
+     "ob": 0.25,
+     "st": "prelim"
+    },
     null,
     null,
     null
@@ -283,7 +323,11 @@
   },
   "9xshl2oozn": {
    "p": [
-    null,
+    {
+     "cat": "Amateur",
+     "ob": 27.45,
+     "st": "prelim"
+    },
     null,
     null,
     null
@@ -301,7 +345,11 @@
   },
   "tldqqnczuq": {
    "p": [
-    null,
+    {
+     "cat": "Amateur",
+     "ob": 0.05,
+     "st": "prelim"
+    },
     null,
     null,
     null
@@ -310,7 +358,11 @@
   },
   "fl7n5chd8b": {
    "p": [
-    null,
+    {
+     "cat": "Amateur",
+     "ob": 117.55,
+     "st": "prelim"
+    },
     null,
     null,
     null
