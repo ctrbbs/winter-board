@@ -34,7 +34,8 @@
     {
      "cat": "PRO",
      "ob": 0.4,
-     "st": "prelim"
+     "st": "prelim",
+     "h": 6.85
     },
     null,
     null,
@@ -44,7 +45,12 @@
   },
   "ertj4emio2": {
    "p": [
-    null,
+    {
+     "cat": "PRO",
+     "ob": 0,
+     "st": "prelim",
+     "h": 2.05
+    },
     null,
     null,
     null
@@ -92,7 +98,8 @@
     {
      "cat": "PRO",
      "ob": 738.4,
-     "st": "prelim"
+     "st": "prelim",
+     "h": 4.65
     },
     null,
     null,
@@ -105,7 +112,8 @@
     {
      "cat": "PRO",
      "ob": 12.6,
-     "st": "prelim"
+     "st": "prelim",
+     "h": 2.0
     },
     null,
     null,
@@ -149,7 +157,8 @@
     {
      "cat": "PRO",
      "ob": 107.5,
-     "st": "prelim"
+     "st": "prelim",
+     "h": 6.85
     },
     null,
     null,
@@ -211,7 +220,8 @@
     {
      "cat": "Amateur",
      "ob": 20.35,
-     "st": "prelim"
+     "st": "prelim",
+     "h": 2.5
     },
     null,
     null,
@@ -233,7 +243,8 @@
     {
      "cat": "Amateur",
      "ob": 12.35,
-     "st": "prelim"
+     "st": "prelim",
+     "h": 5.15
     },
     null,
     null,
@@ -313,7 +324,8 @@
     {
      "cat": "Amateur",
      "ob": 0.25,
-     "st": "prelim"
+     "st": "prelim",
+     "h": 3.0
     },
     null,
     null,
@@ -326,7 +338,8 @@
     {
      "cat": "Amateur",
      "ob": 27.45,
-     "st": "prelim"
+     "st": "prelim",
+     "h": 3.75
     },
     null,
     null,
@@ -361,7 +374,8 @@
     {
      "cat": "Amateur",
      "ob": 117.55,
-     "st": "prelim"
+     "st": "prelim",
+     "h": 4.5
     },
     null,
     null,
@@ -380,7 +394,12 @@
   },
   "nh8kkrf9wl": {
    "p": [
-    null,
+    {
+     "cat": "Amateur",
+     "ob": 0,
+     "st": "prelim",
+     "h": 4.45
+    },
     null,
     null,
     null
