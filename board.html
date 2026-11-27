@@ -54,6 +54,8 @@
   .prize{font-size:11px;color:var(--gold);font-weight:700;margin-left:6px}
   .ok{color:var(--ok);font-weight:700}
   .neg{color:var(--neg)}
+  .ar{font-size:11px;font-weight:800;margin-left:6px}
+  .ar.up{color:var(--ok)} .ar.down{color:var(--neg)}
   .foot{margin-top:12px;font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
   .empty{padding:40px 10px;text-align:center;color:var(--muted)}
   .snow{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
@@ -126,11 +128,17 @@
         h += (p.h||0); if(p.cat) stage=p.cat;
       });
       var ex=extraPts(m.x); total+=ex;
-      rows.push({n:nm.n, c:nm.c, s:stage, t:total, h:h, ex:ex, out:!!m.out});
+      rows.push({n:nm.n, c:nm.c, s:stage, t:total, h:h, ex:ex, out:!!m.out, lp:m.lp||null});
     });
     rows.sort(function(a,b){ if(a.out!==b.out) return a.out?1:-1; return (b.t-a.t)||(b.h-a.h)||a.n.localeCompare(b.n); });
     var place=0; rows.forEach(function(r){ r.place = r.out ? null : ++place; });
     return rows;
+  }
+  function arrow(r){
+    if(!r.place||!r.lp||r.lp===r.place) return "";
+    var d=r.lp-r.place;
+    return d>0 ? '<span class="ar up" title="поднялась на '+d+'">▲'+d+'</span>'
+               : '<span class="ar down" title="опустилась на '+(-d)+'">▼'+(-d)+'</span>';
   }
 
   function render(){
@@ -148,7 +156,7 @@
       var left = Math.max(0, THRESHOLD - r.t);
       h+='<tr class="'+(zone?'zone':'')+(r.out?' out':'')+'">'
         +'<td class="l pl">'+(r.place||'—')+'</td>'
-        +'<td class="l nk">'+esc(r.n)+(zone?'<span class="prize">'+PRIZES[r.place-1]+'</span>':'')+(r.out?' · выбыла':'')+'</td>'
+        +'<td class="l nk">'+esc(r.n)+arrow(r)+(zone?'<span class="prize">'+PRIZES[r.place-1]+'</span>':'')+(r.out?' · выбыла':'')+'</td>'
         +'<td class="l"><span class="st '+esc(r.s)+'">'+esc(r.s)+'</span></td>'
         +'<td class="l">'+esc(r.c)+'</td>'
         +'<td>'+hrs(r.h)+'</td>'
@@ -157,7 +165,7 @@
         +'<td>'+(left===0?'<span class="ok">✓</span>':f0(left))+'</td></tr>';
     });
     h+='</tbody></table></div></div>';
-    h+='<div class="foot"><span>Выделены места 1–5 (призовая зона). При равных баллах выше та, у кого больше часов. Меньше 700 баллов — половина приза.</span>'
+    h+='<div class="foot"><span>Выделены места 1–5 (призовая зона). При равных баллах выше та, у кого больше часов. Меньше 700 баллов — половина приза. ▲▼ — изменение места с прошлого обновления.</span>'
       +'<span>Обновляется по понедельникам</span></div>';
     app.innerHTML=h;
   }
